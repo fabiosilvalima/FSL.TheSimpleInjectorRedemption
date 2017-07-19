@@ -4,6 +4,6 @@ namespace FSL.Redemption.Mvc.Models.DI
 {
     public interface IProductService
     {
-        IList<string> GetAllProducts();
+        IList<string> GetAllProductsByStatus();
     }
 }

@@ -11,7 +11,7 @@ namespace FSL.Redemption.Mvc.Models.Old1
             _productRepository = new SqlProductRepository();
         }
 
-        public IList<string> GetAllProducts()
+        public IList<string> GetAllProductsByStatus()
         {
             var criteria = "Status=1";
 

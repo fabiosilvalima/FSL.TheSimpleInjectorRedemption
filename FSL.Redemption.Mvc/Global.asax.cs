@@ -23,16 +23,12 @@ namespace FSL.Redemption.Mvc
         private void RegisterContainer()
         {
             var container = new Container();
-
-            // 2. Configure the container (register)
-            // See below for more configuration examples
+            
             container.Register<IProductRepository, SqlProductRepository>(Lifestyle.Singleton);
             container.Register<IProductService, ProductService>(Lifestyle.Singleton);
-
-            // 3. Optionally verify the container's configuration.
+            
             container.Verify();
-
-            // 4. Store the container for use by the application
+            
             DependencyResolver.SetResolver(
                 new SimpleInjectorDependencyResolver(container));
 

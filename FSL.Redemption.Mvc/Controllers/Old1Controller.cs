@@ -15,7 +15,7 @@ namespace FSL.Redemption.Mvc.Controllers
         // GET: Old1
         public ActionResult Index()
         {
-            var allProducts = _productService.GetAllProducts();
+            var allProducts = _productService.GetAllProductsByStatus();
 
             return View();
         }
